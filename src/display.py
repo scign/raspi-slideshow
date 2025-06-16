@@ -27,3 +27,4 @@ def cleanup():
         stderr=subprocess.DEVNULL
     )
     logging.info("Cleaned up fbi process.")
+

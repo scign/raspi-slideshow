@@ -35,3 +35,4 @@ def monitor_touch(touch_state, touch_device, screen_y_max):
                 logging.info(f"Touch at Y={y} (bottom half): exiting slideshow.")
                 touch_state.exit = True
             y = None
+
