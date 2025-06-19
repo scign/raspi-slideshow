@@ -63,6 +63,8 @@ def get_image_nasa():
                 img_url = data['url']
                 img_resp = requests.get(img_url, timeout=20)
                 return img_resp.content
+        except requests.exceptions.Timeout as e:
+            pass
         except Exception as e:
             logging.error(f"Image retrieval error: {e}")
     raise Exception("Couldn't retrieve an image after several tries.")
