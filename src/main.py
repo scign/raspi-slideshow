@@ -10,7 +10,7 @@ from images import set_provider, get_image
 from display import display_image, cleanup
 from touch import TouchState, get_screen_y_max, monitor_touch
 
-CHANGE_SECONDS = 10
+CHANGE_SECONDS = 30
 IMAGE_PATH = Path("slideshow.jpg")
 TOUCH_DEVICE = '/dev/input/event0'
 LOG_PATH = "slideshow.log"
